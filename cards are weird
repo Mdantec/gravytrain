@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  @medie(max-width:900px){
+    :root{
+        --cell-margin: 12px 2.5vw 0 2.5vw;
+        --cell-width: 95vw;
+        --cell-height: 95vh;
+        --cell-position:default;
+    }
+  }
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+  <!--#401B0D brown
+#07473B dark green
+#204707 regular green
+#360338 purple
+#220001 dark burgundy
+#480005 light burgundy
+#1f9091 bens color
+#313131 card grey
+Creativity leaning on professionalism-->
+  <style>
+
+
+    body{
+      background-color:#f5f0e1;
+
+    }
+
+
+
+
+    .BenBeddow{
+      background-image: url("http://throwaxefeelgood.com/nc_assets/img/BenStuff/bengrainbw.png");
+
+      font-family: "Marck Script";
+      font-weight:500;
+
+
+      -webkit-text-fill-color:white;
+      -webkit-text-stroke-width: .1vw;
+      -webkit-text-stroke-color:black;
+
+      position:fixed;
+      top:1.1vw;
+      right:0;
+      left:0;
+      filter:drop-shadow(3px 3px 3px black);
+
+      text-shadow: (0 3px 3px black);
+      padding-top:0vw;
+      padding-left:10vw;
+      padding-bottom:0vw;
+      padding-right:1vw;
+      text-align:right;
+      font-size:7.15vw;
+      z-index:9999;
+      border:double;
+      border-color:#07473B;
+      border-width:.7vw;
+    }
+    .center{
+      margin:auto;
+    }
+
+
+
+    .cardtexture{
+      position:absolute;
+      top:0;
+      left:0;
+      width: 33vw;
+      height: 18vw;
+      object-fit: fill;
+      border:solid;
+      border-width: 0px;
+      border-color:#07473B;
+      border-radius:10px;
+      perspective: 500px;
+    }
+
+
+
+
+
+
+    .card {
+      position: absolute;
+      top: 11vw;
+      left:.25vw;
+      width: 33vw;
+      height: 18vw;
+      object-fit: fill;
+      perspective: 100000px;
+
+    }
+
+    .content {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius:10px;
+      transition: transform 0.5s;
+      transform-style: preserve-3d;
+    }
+
+    .card:hover .content {
+      transform: rotateY( 180deg ) ;
+      transition: transform 0.75s;
+    }
+
+    .front,
+    .back {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      line-height:2vw;
+      color: #03446A;
+      text-align: center;
+      font-size: 5vw;
+      backface-visibility: hidden;
+    }
+
+    .back {
+      background-color:#313131;
+      border:solid;
+      border-width: 0vw;
+      border-color:#1f9091;
+      border-radius:10px;
+      color: white;
+      transform: rotateY( 180deg );
+      font-size:1vw;
+      text-align:justify;
+    }
+
+    .front-word{
+      font-family:helvetica, sans serif;
+      color:#f5f0e1;
+
+
+    }
+
+    .front2 {
+        background-image: url("http://throwaxefeelgood.com/nc_assets/img/BenStuff/bengrainbw.png");
+        border-radius:10px;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        line-height:4vw;
+        color: #03446A;
+        text-align: right;
+        font-size: 4vw;
+        backface-visibility: hidden;
+        color: white;
+    }
+
+    @media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="content"] {
+
+
+
+    margin: 2.5vw;
+    width: 95vw;
+    height: 85.5vh;
+
+
+  }
+}
+    /*@media only screen and (max-width: 768px) {
+  [style*="float"]{
+    margin-top: 13vw;
+  }
+}*/
+  </style>
+  </head>
+  <body>
+
+
+      <h1 style="margin-top:-.95vw;" class="BenBeddow">Benjamin Beddow</h1>
+        <img style="left:9vw; width:6vw; background:transparent; margin-left:-8vw; padding:.5vw;" class="BenBeddow" src="http://throwaxefeelgood.com/nc_assets/img/BenStuff/benbb.png">
+
+
+      <div class="card">
+        <div class="content">
+          <div class="front"><img class="cardtexture" src="http://throwaxefeelgood.com/nc_assets/img/BenStuff/bengrainbw.png">
+            <DIV CLASS="front2">ABOUT BENJAMIN</div>
+          </div>
+          <div class="back">
+            Ben writes words with his big hands. We met at sevens.
+            Bibbity bobbity boo
+          </div>
+        </div>
+      </div>
+
+      <div style="float:left; margin-left:33.25vw;" class="card">
+          <div class="content">
+              <div class="front2">CLIENTS</div>
+              <div class="back">UR MUM</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="float:left; margin-left:66.5vw;" class="card">
+        <div class="content">
+          <div style="position:absolute;" class="front"><img class="cardtexture" src="http://throwaxefeelgood.com/nc_assets/img/BenStuff/bengrainbw.png">
+            <div class="front2">TESTIMONIALS</div>s
+          </div>
+          <div class="back">
+            heck
+          </div>
+        </div>
+      </div>
+
+      <div style="float:left;margin-top:18.5vw; margin-left:33.25vw;" class="card">
+        <div class="content">
+          <div style="position:absolute;" class="front"><img class="cardtexture" src="http://throwaxefeelgood.com/nc_assets/img/BenStuff/bengrainbw.png">
+
+          </div>
+          <div class="back">
+            heck
+          </div>
+        </div>
+      </div>
+
+      <div style="float:left;margin-top:18.5vw;" class="card">
+        <div class="content">
+          <div style="position:absolute;" class="front"><img class="cardtexture" src="http://throwaxefeelgood.com/nc_assets/img/BenStuff/bengrainbw.png">
+
+          </div>
+          <div class="back">
+            heck
+          </div>
+        </div>
+      </div>
+
+      <div style="float:left;margin-top:18.5vw; margin-left:66.5vw;" class="card">
+        <div class="content">
+          <div style="position:absolute;" class="front"><img class="cardtexture" src="http://throwaxefeelgood.com/nc_assets/img/BenStuff/bengrainbw.png">
+
+          </div>
+          <div class="back">
+            heck
+          </div>
+        </div>
+      </div>
+
+
+</body>
+
+
+
+
+
+
+</html>
